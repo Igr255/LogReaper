@@ -1,0 +1,65 @@
+/**
+ * author: Igor Hanus <xhanus19@stud.fit.vutbr.cz>
+ * brief: CSS for AppStateBar component.
+ **/
+
+/*Main design of the App state bar*/
+#options-bar {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  background-color: #3f434c;
+  user-select: none;
+}
+
+#mode-display {
+  color: #ced4da;
+  font-weight: bold;
+  margin-right: 1em;
+  user-select: none;
+}
+
+/*Line counter*/
+#line-display {
+  color: #ced4da;
+  font-weight: bold;
+  margin-left: 3%;
+  user-select: none;
+}
+
+/*Error warnings*/
+#error-display {
+  background-color: rgba(255, 2, 2, 0.2);
+  height: 100%;
+  margin: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(199, 199, 199);
+  border: 1px solid red;
+  border-radius: 0 0 5px 5px;
+  overflow: hidden;
+  visibility: hidden;
+  margin-bottom: 2rem;
+}
+
+#app-logo {
+  width: 10rem;
+}
+
+#app-name-left {
+  color: #67dbb1;
+  padding-left: 0.6rem;
+}
+
+#app-name-right {
+  color: #ffb082;
+}
+
+.app-name {
+  font-size: 2rem;
+}

@@ -1,0 +1,103 @@
+/**
+ * author: Igor Hanus <xhanus19@stud.fit.vutbr.cz>
+ * brief: CSS for App component.
+ **/
+
+.app {
+  text-align: center;
+  overflow: hidden;
+}
+
+#app-body {
+  display: grid;
+  grid-template-columns: 12% minmax(500px, auto) 26%;
+  grid-template-rows: 3rem auto 1fr 2rem;
+
+  background-color: #3f434c;
+  max-height: 100vh;
+  height: 100vh;
+  column-gap: 0.5rem;
+}
+
+/* highlight color for both main text and filter */
+.cm-selectionBackground {
+  background-color: rgba(0, 255, 255, 0.252) !important;
+}
+
+/* topology of the main grid (how individual components are placed) */
+#app-body > div:nth-child(1) {
+  grid-column-start: span 3;
+}
+
+#app-body > div:nth-child(2) {
+  grid-row-start: span 2;
+}
+
+#app-body > div:nth-child(4) {
+  grid-row-start: span 2;
+}
+
+#app-body > div:nth-child(6) {
+  grid-column-start: span 3;
+}
+
+/* helper CSS for selecting and numbering components for written part of the bachelor thesis*/
+.selection {
+  border: 3px solid lightblue !important;
+  position: relative;
+  padding-left: 20px !important;
+  padding-top: 15px !important;
+}
+
+.selection-number {
+  font-size: 45px;
+  font-weight: bold;
+  position: absolute;
+  bottom: -5px;
+  left: -4px;
+  z-index: 10;
+  color: orange;
+}
+
+#footer {
+  grid-column-start: span 3;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-right: 1rem;
+}
+
+#footer > img {
+  width: 2.2rem;
+}
+
+#footer > p {
+  margin-left: 0.3rem;
+  color: white;
+  font-size: 17px;
+  user-select: none;
+  font-weight: bold;
+}
+
+#footer > a {
+  margin-left: 1rem;
+  margin-right: auto;
+}
+
+#footer .fa-gitlab {
+  font-size: 1.5rem;
+  color: #fc6d26;
+  cursor: pointer;
+}
+
+#footer .fa-gitlab:hover {
+  color: #fca326;
+}
+
+.grokHighlight {
+  color: #ffb082;
+}
+
+.paramReHighlight {
+  color: #2da9e6;
+}

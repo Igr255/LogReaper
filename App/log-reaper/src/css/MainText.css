@@ -1,0 +1,26 @@
+/**
+ * author: Igor Hanus <xhanus19@stud.fit.vutbr.cz>
+ * brief: CSS for Main text component.
+ **/
+
+#main-text {
+  background-color: #2a2d34;
+  counter-reset: line;
+  border: 1px solid #000000;
+  overflow-y: auto;
+}
+
+/* Set codemirror text window size */
+.cm-theme {
+  height: 100%;
+  text-align: left;
+}
+
+/* codemirror component */
+.cm-editor {
+  height: 100%;
+}
+
+.hitbox {
+  background: linear-gradient(90deg, rgba(253, 29, 29, 1) 0.3%, rgba(252, 176, 69, 0) 0.3%);
+}

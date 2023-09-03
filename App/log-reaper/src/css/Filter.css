@@ -1,0 +1,27 @@
+/**
+ * author: Igor Hanus <xhanus19@stud.fit.vutbr.cz>
+ * brief: CSS for Export modal window.
+ **/
+
+#filter {
+  background-color: hsl(222, 11%, 18%);
+  border: 1px solid #000000;
+  display: grid;
+  grid-template-columns: minmax(auto, 90%) 6rem;
+  padding: 0.5rem;
+}
+
+#button-wrapper {
+  margin: auto;
+}
+
+#user-input-wrapper {
+  display: flex;
+}
+
+#user-input-wrapper > .cm-theme {
+  font-size: 20px;
+  border: 1px solid white;
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,41 @@
+/**
+ * author: Igor Hanus <xhanus19@stud.fit.vutbr.cz>
+ * brief: CSS for Grok set selecion component.
+ **/
+
+/* overall design of the grok set selection bar*/
+#side-bar {
+  overflow: auto;
+  display: grid;
+  grid-template-rows: 3rem auto;
+}
+
+/* list of Grok sets*/
+#side-bar-data {
+  background-color: #2a2d34;
+  color: white;
+  border: 1px solid #000000;
+  font-size: 15px;
+  text-align: right;
+  padding: 10px;
+  display: flex;
+  flex-grow: initial;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+#side-bar-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1b1c1e;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+}
+
+.pattern-set-data {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}

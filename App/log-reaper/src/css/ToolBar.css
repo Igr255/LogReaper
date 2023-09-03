@@ -1,0 +1,121 @@
+/**
+ * author: Igor Hanus <xhanus19@stud.fit.vutbr.cz>
+ * brief: CSS for Toolbar and ToolbarPattern components.
+ **/
+
+#toolbar {
+  background-color: #2a2d34;
+  border: 1px solid #000000;
+}
+
+#toolbar-body {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 85% 15%;
+}
+
+#toolbar-patterns {
+  position: relative;
+  overflow-y: auto;
+}
+
+/* button area style*/
+#options {
+  background: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/*style of a single message pattern*/
+.tool-bar-pattern {
+  display: grid;
+  grid-template-columns: auto 1fr 2rem;
+  text-align: left;
+  padding: 0.2rem;
+
+  grid-gap: 0.2rem;
+  align-items: center;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  margin: 0.5rem;
+
+  min-width: 350px;
+}
+
+.tool-bar-pattern > div,
+.tool-bar-pattern > input {
+  background-color: #3f434c;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 2px;
+  position: relative;
+}
+
+.pattern-selection {
+  text-align: center;
+  background-color: transparent;
+  z-index: 0;
+}
+
+.pattern-selection > input {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.pattern-name {
+  border: 1px solid #3498db;
+}
+
+/* Grid for individual sub-patterns */
+.log-message-patterns {
+  grid-column-start: span 3;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 10% auto;
+  background-color: #3f434c;
+  padding: 0.2rem;
+  margin: 0.2rem;
+  border-radius: 3px;
+}
+
+.pattern-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* background of sub-pattern value */
+.pattern-text {
+  background-color: #2a2d34;
+  border-radius: 5px;
+  margin: 2px;
+  overflow-wrap: break-word;
+  max-width: 400px;
+  min-width: 200px;
+}
+
+.pattern-edit {
+  background-color: #2a2d34 !important;
+}
+
+.pattern-values {
+  grid-column-start: span 3;
+  text-align: center;
+  color: white;
+}
+
+.pattern-value {
+  overflow: hidden;
+}
+
+/* override margin of treeitem ul element*/
+/* for the display of sub-patterns */
+.pattern-value,
+ul {
+  margin-left: 0 !important;
+}

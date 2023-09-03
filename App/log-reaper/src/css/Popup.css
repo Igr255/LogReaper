@@ -1,0 +1,44 @@
+/**
+ * author: Igor Hanus <xhanus19@stud.fit.vutbr.cz>
+ * brief: CSS for Popup component.
+ **/
+
+#popup {
+  background-color: white;
+  border-radius: 10px;
+  transition-duration: 200ms;
+  opacity: 0;
+  max-height: 18.5rem;
+  margin: 0.5rem;
+  position: absolute;
+  border: 5px solid #1565c0;
+
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+}
+
+#popup-content {
+  background-color: #ced4da;
+  max-height: 15rem;
+  overflow-y: scroll;
+}
+
+#popup-regex-button {
+  border-top: 1px solid black;
+  color: white;
+  font-weight: bolder;
+  background-color: #125194;
+  text-decoration: none;
+  text-align: left;
+  border-radius: 0;
+  border-top: 5px solid #1565c0;
+  padding: 0.3rem;
+  float: left;
+}
+
+#popup-regex-button:hover {
+  background-color: rgba(149, 183, 217, 0.87);
+}
